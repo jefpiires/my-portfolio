@@ -56,10 +56,16 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/jefpiires">
+          <Link
+            href="https://github.com/jefpiires"
+            className="hover:bg-gradient-to-br hover:shadow-md hover:shadow-primary-600 hover:font-bold hover:from-secondary-400 hover:to-primary-600 rounded-full"
+          >
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/jeferson-piires/">
+          <Link
+            href="https://www.linkedin.com/in/jeferson-piires/"
+            className="hover:bg-gradient-to-br hover:shadow-md hover:shadow-primary-600 hover:font-bold hover:from-secondary-400 hover:to-primary-600 rounded-md"
+          >
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
@@ -119,7 +125,7 @@ const EmailSection = () => {
             </div>
             <button
               type="submit"
-              className="bg-primary-400 hover:bg-primary-500 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="bg-gradient-to-br from-primary-600 to-secondary-400 hover:shadow-md hover:shadow-primary-600 hover:font-bold hover:from-secondary-400 hover:to-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
               Send Message
             </button>

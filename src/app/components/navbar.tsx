@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./navLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import MenuOverlay from "./menuOverlay";
+import Image from "next/image";
 
 const navLinks = [
   {
@@ -28,9 +29,11 @@ const Navbar = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
+          className="text-2xl md:text-4xl text-white font-semibold"
         >
-          LOGO
+          <span className="bg-gradient-to-r from-primary-600 to-secondary-400 inline-block text-transparent bg-clip-text">
+            {"<JPires />"}
+          </span>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

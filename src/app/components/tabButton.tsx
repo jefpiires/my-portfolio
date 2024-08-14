@@ -22,7 +22,7 @@ const TabButton = (props: TabButtonProps) => {
       <motion.div
         animate={props.active ? "active" : "default"}
         variants={variants}
-        className="h-1 bg-primary-500 mt-2 mr-3"
+        className="h-1 bg-gradient-to-r from-primary-600 to-secondary-400 mt-2 mr-3"
       ></motion.div>
     </button>
   );

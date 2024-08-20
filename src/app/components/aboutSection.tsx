@@ -64,7 +64,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg ">
-            I'm Jeferson, a Front-End and Mobile Developer with a strong
+            I&#39;m Jeferson, a Front-End and Mobile Developer with a strong
             background in creating intuitive interfaces and robust mobile
             applications. With expertise in React, React Native, and various
             other technologies, my focus is on delivering high-quality solutions
@@ -73,9 +73,10 @@ const AboutSection = () => {
             <br />
             My journey in development started with a deep interest in how
             technology can transform ideas into engaging digital experiences.
-            Since then, I've been dedicated to honing my skills and exploring
-            new tools and techniques that enable me to build more efficient and
-            innovative products.
+            <br />
+            Since then, I&#39;ve been dedicated to honing my skills and
+            exploring new tools and techniques that enable me to build more
+            efficient and innovative products.
             <br />
             <br />
             My goal is to continuously seek new challenges that allow me to grow

@@ -23,6 +23,15 @@ const projectsData = [
     gitUrl: "https://github.com/jefpiires/TailwindSpotify",
     previewUrl: "/",
   },
+  {
+    id: 3,
+    title: "in.Orbit",
+    description: "Gerenciador de Metas",
+    image: "/images/projects/in-orbit.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/jefpiires/NLW-pocket",
+    previewUrl: "https://nlw-pocket-bay.vercel.app/",
+  },
 ];
 //#6cd890
 

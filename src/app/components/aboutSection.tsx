@@ -74,7 +74,7 @@ const AboutSection = () => {
             <br />
             <br />
             Busco desafios que me tirem da zona de conforto, porque acredito que é assim que crescemos.
-            Se você procura um dev comprometido com qualidade e impacto, vamos conversar!"
+            Se você procura um dev comprometido com qualidade e impacto, vamos conversar!
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -101,7 +101,7 @@ const AboutSection = () => {
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab)?.content ?? (
-              <p>Content not found</p>
+              <p>Conteúdo não encontrado</p>
             )}
           </div>
         </div>

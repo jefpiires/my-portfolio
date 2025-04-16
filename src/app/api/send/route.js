@@ -2,12 +2,23 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+
 const fromEmail = process.env.FROM_EMAIL;
 
 export async function POST(req, res) {
-  const { email, subject, message } = await req.json();
-  console.log(email, subject, message);
+
   try {
+    const { email, subject, message } = await req.json();
+    if (!email || !subject || !message) {
+      return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    }
+
+    if (!process.env.RESEND_API_KEY) {
+      return NextResponse.json(
+        { error: "Resend API key not configured" },
+        { status: 500 }
+      );
+    }
     const data = await resend.emails.send({
       from: fromEmail,
       to: ["jeferson.piires@gmail.com", email],
@@ -23,6 +34,10 @@ export async function POST(req, res) {
     });
     return NextResponse.json(data);
   } catch (error) {
-    return NextResponse.json({ error });
+    console.error("Error sending email:", error);
+    return NextResponse.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
   }
 }

@@ -18,16 +18,16 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-400">
-              Hello, I&#39;m{" "}
+              Olá, Sou{" "}
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
                 "Jeferson",
                 1000,
-                "Front-End Developer",
+                "Desenvolvedor Front-End",
                 1000,
-                "Mobile Developer",
+                "Desenvolvedor Mobile",
                 1000,
               ]}
               wrapper="span"
@@ -36,24 +36,22 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I am dedicated to crafting clean and efficient code, constantly
-            refining my skills to bring innovative solutions to the table.
-            Passionate about turning ideas into digital experiences, each
-            project represents a step forward in my journey as a developer.
+            Vivo para escrever código limpo e performático, sempre aprendendo e trazendo inovação pra mesa.
+            Minha paixão? Materializar ideias em experiências digitais – cada projeto é um novo degrau na minha evolução como desenvolvedor!
           </p>
           <div>
             <Link
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-600 to-secondary-400 hover:shadow-md hover:shadow-primary-600 hover:font-medium hover:from-secondary-400 hover:to-primary-600 text-white font-medium"
             >
-              Hire Me
+              Contrate-me
             </Link>
             <Link
-              href="https://docs.google.com/document/d/1ts2SyWAFE_zg0xFovOZSnVY1yjvVKHCh9hKv4mrnGQM/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1ziSOK6iRYHWJdPAaFD9CLnIDbkERecCp/view?usp=sharing"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-600 to-secondary-400 hover:shadow-md hover:shadow-primary-600 hover:font-medium hover:from-secondary-400 hover:to-primary-600 font-medium text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-[#12121280] rounded-full px-5 py-2">
-                Download CV
+                Baixar Currículo
               </span>
             </Link>
           </div>

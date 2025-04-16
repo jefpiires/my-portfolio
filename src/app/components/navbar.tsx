@@ -4,19 +4,18 @@ import React, { useState } from "react";
 import NavLink from "./navLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import MenuOverlay from "./menuOverlay";
-import Image from "next/image";
 
 const navLinks = [
   {
-    title: "About",
+    title: "Sobre",
     path: "#about",
   },
   {
-    title: "Projects",
+    title: "Projetos",
     path: "#projects",
   },
   {
-    title: "Contact",
+    title: "Contato",
     path: "#contact",
   },
 ];

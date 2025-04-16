@@ -23,7 +23,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Information Systems, Uniaraxá</li>
+        <li>Sistemas de informação, Uniaraxá</li>
       </ul>
     ),
   },
@@ -32,11 +32,11 @@ const TAB_DATA = [
     id: "soft-skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Teamwork</li>
-        <li>Interpersonal Relationships</li>
-        <li>Creativity</li>
-        <li>Perseverance</li>
-        <li>Communication Skills</li>
+        <li>Trabalho em equipe</li>
+        <li>Relacionamentos interpessoais</li>
+        <li>Criatividade</li>
+        <li>Perseverança</li>
+        <li>Habilidades de comunicação</li>
       </ul>
     ),
   },
@@ -62,28 +62,19 @@ const AboutSection = () => {
           alt="about image"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
           <p className="text-base lg:text-lg ">
-            I&#39;m Jeferson, a Front-End and Mobile Developer with a strong
-            background in creating intuitive interfaces and robust mobile
-            applications. With expertise in React, React Native, and various
-            other technologies, my focus is on delivering high-quality solutions
-            that meet user needs and exceed expectations.
+            Sou Jeferson, Desenvolvedor Front-End e Mobile apaixonado por criar interfaces fluidas e apps móveis de alto desempenho.
+            Especializado em React e React Native, meu trabalho vai além do código:
+            é sobre entregar experiências que encantam usuários e resolvem problemas reais.
             <br />
             <br />
-            My journey in development started with a deep interest in how
-            technology can transform ideas into engaging digital experiences.
-            <br />
-            Since then, I&#39;ve been dedicated to honing my skills and
-            exploring new tools and techniques that enable me to build more
-            efficient and innovative products.
+            Minha carreira começou da curiosidade em transformar ideias em realidade digital.
+            Hoje, vivo em constante evolução, explorando ferramentas e metodologias para construir soluções escaláveis e inovadoras.
             <br />
             <br />
-            My goal is to continuously seek new challenges that allow me to grow
-            as a developer and contribute to projects that make a difference. I
-            am committed to ongoing learning and adapting to industry trends to
-            ensure that the solutions I provide are not only functional but also
-            impactful and cutting-edge.
+            Busco desafios que me tirem da zona de conforto, porque acredito que é assim que crescemos.
+            Se você procura um dev comprometido com qualidade e impacto, vamos conversar!"
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -91,21 +82,21 @@ const AboutSection = () => {
               active={tab === "skills"}
             >
               {" "}
-              Hard Skills{" "}
+              Habilidades Técnicas{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("soft-skills")}
               active={tab === "soft-skills"}
             >
               {" "}
-              Soft Skills{" "}
+              Habilidades Comportamentais{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
+              Educação{" "}
             </TabButton>
           </div>
           <div className="mt-8">

@@ -7,20 +7,20 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Gerador de Etiquetas",
+    description: "Gerador de etiquetas com hostnames de maquinas, com o intuito de facilitar a identificação de maquinas em uma loja.",
+    image: "/images/projects/gerador-etiquetas.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/jefpiires/GeradorDeEtiqueta",
+    previewUrl: "https://gerador-de-etiqueta-two.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Barba Bruta",
     description: "Agendamento para barbearia",
     image: "/images/projects/1.webp",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/jefpiires/barba-brutal",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
-    title: "Spotify Tailwind",
-    description: "Criando interface Spotify com Tailwind",
-    image: "/images/projects/spotify-tailwind.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/jefpiires/TailwindSpotify",
     previewUrl: "/",
   },
   {
@@ -33,7 +33,6 @@ const projectsData = [
     previewUrl: "https://nlw-pocket-bay.vercel.app/",
   },
 ];
-//#6cd890
 
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
@@ -56,7 +55,7 @@ const ProjectSection = () => {
   return (
     <section ref={ref} id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+        Meus Projetos
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
